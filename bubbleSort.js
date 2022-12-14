@@ -16,3 +16,4 @@ const bubbleSort = (arr) => {
     }
 
    console.log(bubbleSort(num));
+   /*Big O = O(n2) */
