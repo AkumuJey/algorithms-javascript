@@ -4,7 +4,7 @@ const bubbleSort = (arr) => {
     let swapped
     do {
         swapped = false
-        for (let index = 0; index < num.length -1; index++)
+        for (let i = 0; i < arr.length -1; i++)
             if (arr[i] > arr[i+1]) {
                 let temp = arr[1]
                 arr[i] = arr[i+1]
@@ -12,4 +12,7 @@ const bubbleSort = (arr) => {
                 swapped = true
             }      
         } while(swapped)
+        return arr
     }
+
+   console.log(bubbleSort(num));
